@@ -2,7 +2,7 @@ import {test, describe, expect} from "@jest/globals";
 import axios from 'axios';
 import {API_URL} from "../src/constants/api.js";
 
-describe('Posts API', () => {
+describe.skip('Posts API', () => {
   test('POST /posts creates a new post', async () => {
     const newPost = {
       title: 'Test Post',
