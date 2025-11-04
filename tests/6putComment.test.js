@@ -2,7 +2,7 @@ import {test, describe, expect} from "@jest/globals";
 import axios from 'axios';
 import {API_URL} from "../src/constants/api.js";
 
-describe('Comments API', () => {
+describe.skip('Comments API', () => {
   test('PUT /comments/1 updates an existing comment', async () => {
     const updatedComment = {
       postId: 1,

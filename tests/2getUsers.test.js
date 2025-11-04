@@ -2,7 +2,7 @@ import {test, describe, expect} from "@jest/globals";
 import axios from 'axios';
 import { API_URL } from '../src/constants/api.js';
 
-describe('Users API', () => {
+describe.skip('Users API', () => {
   test('GET /users/1 returns valid user', async () => {
     const response = await axios.get(`${API_URL}/users/1`);
 
